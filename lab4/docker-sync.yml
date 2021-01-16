@@ -1,0 +1,6 @@
+version: "2"
+syncs:
+  recommendation-sync:
+    src: './symfony'
+    sync_excludes: [ './symfony/vendor/', './symfony/var/' ]
+

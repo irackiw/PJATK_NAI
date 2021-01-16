@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+    {% block body %}
+        <div class="container">
+            <h2>Recommendation list</h2>
+            {{ form(form) }}
+            <table data-toggle="table"
+                   data-pagination="true"
+                   data-search="true">
+                <thead>
+                <tr>
+                    <th data-field="no" data-sortable="true">No.</th>
+                    <th data-field="film" data-sortable="true">Film name</th>
+                    <th data-field="rate" data-sortable="true">Rate</th>
+                    <th data-field="user" data-sortable="true">User</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for key, rate in rates %}
+                    <tr>
+                        <td scope="col">{{ key }}</td>
+                        <td >{{ rate.film.name }}</td>
+                        <td >{{ rate.rate }}</td>
+                        <td >{{ rate.user.name }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endblock body %}
