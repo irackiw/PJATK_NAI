@@ -2,8 +2,8 @@
 """
 Problem: Recognize type of clothes using neutral network
 Dataset: https://github.com/zalandoresearch/fashion-mnist
-Authors: Wociech Iracki s13066@pjwstk.edu.pl, Adrian Wojewoda 
-Created following tutorial by user: https://www.kaggle.com/vesuvius13
+Authors: Wojciech Iracki <s13066@pjwstk.edu.pl> , Adrian Wojewoda <s16095@pjwstk.edu.pl>
+Created following @vesuvius13 tutorial: https://www.kaggle.com/vesuvius13
 
 """
 
